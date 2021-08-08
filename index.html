@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Energy</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <header class="header" id="header">
+      <nav class="header-content">
+        <div class="nav-logo">
+          <i class="far fa-lightbulb fa-lg logo-icon"></i>
+          <span class="logo-text">energy</span>
+        </div>
+        <ul id="nav-menu-primary" class="nav-menu nav-menu-primary"></ul>
+        <ul id="nav-menu-secondary" class="nav-menu nav-menu-secondary">
+          <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Help</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><i class="fas fa-user-circle"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><i class="fas fa-shopping-cart"></i
+            ></a>
+          </li>
+        </ul>
+        <button class="chat-button">Go to chat</button>
+        <button class="mobile-menu" onclick="expandMenu()">
+          <i class="fas fa-bars hamburger-menu fa-lg"></i>
+        </button>
+      </nav>
+    </header>
+    <div class="hero-container">
+      <div class="hero-image"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Pay Less, Get More</h1>
+        <p class="hero-sub-title">
+          Save on your bill through our broadband and energy bundle
+        </p>
+        <div class="store-container">
+          <a href=""
+            ><img
+              src="./assets/google-play-badge.png"
+              alt=""
+              class="store-image"
+          /></a>
+          <a href=""
+            ><img src="./assets/appstore.svg" alt="" class="store-image-apple"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <section id="about" class="about-section">
+      <div class="section-container">
+        <div class="section-title">
+          <h2 class="section-title-text">About</h2>
+        </div>
+        <div class="section-image">
+          <img class="about-image" src="./assets/about.jpeg" alt="about" />
+        </div>
+        <div class="about-card-primary">
+          We know how to reduce your energy consumption
+        </div>
+        <div class="about-card-secondary">
+          <i class="far fa-lg fa-lightbulb about-bulb-icon"></i>
+          <h5 class="about-card-secondary-title">
+            Lorem ipsum dolor sit. dolor sit.
+          </h5>
+          <p class="about-card-secondary-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, quos
+            molestiae ipsa maiores asperiores natus ullam eveniet voluptatum hic
+            laudantium eaque corporis sed neque molestias consequatur! Vitae
+            dolorum illo quis?
+          </p>
+          <a href="" class="text-link">Read more</a>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="services-section">
+      <div class="section-container">
+        <div class="section-title">
+          <h2 class="section-title-text">Services</h2>
+        </div>
+        <div class="services-section-content">
+          <div class="col-1">
+            <div class="services-solution-card">
+              <h3 class="service-solution-card-title">Services & Solutions</h3>
+              <p class="service-solution-card-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium facere placeat voluptates rem culpa porro ab optio
+                quibusdam vel.
+              </p>
+            </div>
+            <div class="card">
+              <img
+                src="./assets/cost-management.jpeg"
+                alt=""
+                class="card-image"
+              />
+              <div class="card-content">
+                <span class="card-title">Cost Management</span>
+                <p class="card-description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. At
+                  magni soluta repellat et aliquid!
+                </p>
+                <a href="" class="text-link">Read more</a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="./assets/energy-conservation.jpeg"
+                alt=""
+                class="card-image"
+              />
+              <div class="card-content">
+                <span class="card-title">Energy Conservation</span>
+                <p class="card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                  nobis sed pariatur officiis ea mollitia animi vel ullam totam.
+                </p>
+                <a href="" class="text-link">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="card">
+              <img
+                src="./assets/energy-services.jpeg"
+                alt=""
+                class="card-image"
+              />
+              <div class="card-content">
+                <span class="card-title">Energy Services</span>
+                <p class="card-description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Enim, quas totam ut commodi consequatur veritatis perspiciatis
+                  inventore deserunt ipsa sit!
+                </p>
+                <a href="" class="text-link">Read more</a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="./assets/management-program.jpeg"
+                alt=""
+                class="card-image"
+              />
+              <div class="card-content">
+                <span class="card-title">Management Programs</span>
+                <p class="card-description">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Pariatur expedita repellat, ex incidunt enim a repudiandae
+                  facere.
+                </p>
+                <a href="" class="text-link">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials" class="testimonials-section">
+      <div class="section-container testimonials">
+        <div class="section-title">
+          <h2 class="section-title-text">Testimonials</h2>
+        </div>
+        <div class="testimonials-section-content">
+          <div class="testimonial-quote">
+            <i class="fas fa-quote-right fa-2x quote-icon"></i>
+          </div>
+          <div class="testimonial-content">
+            <h4 class="testimonials-title">Testimonials</h4>
+            <div class="swiper-container swiper-testimonials">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slide-card">
+                    <div class="testimonial-description">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Nihil distinctio sint ex enim quis rerum recusandae? Sint
+                      aliquid, ea rem, quos minima quisquam nihil mollitia animi
+                      culpa quaerat quas explicabo.
+                    </div>
+                    <div class="testimonial-user">
+                      <div class="testimonial-user-avatar">
+                        <i class="fas fa-user-circle fa-3x"></i>
+                      </div>
+                      <div class="testimonial-user-name">
+                        <span class="user-name">John Doe</span>
+                        <span class="user-designation"
+                          >Engineer, Company name</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-card">
+                    <div class="testimonial-description">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Nihil distinctio sint ex enim quis rerum recusandae? Sint
+                      aliquid, ea rem, quos minima quisquam nihil mollitia animi
+                      culpa quaerat quas explicabo.
+                    </div>
+                    <div class="testimonial-user">
+                      <div class="testimonial-user-avatar">
+                        <i class="fas fa-user-circle fa-3x"></i>
+                      </div>
+                      <div class="testimonial-user-name">
+                        <span class="user-name">John Smith</span>
+                        <span class="user-designation"
+                          >Engineer, Company name</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-card">
+                    <div class="testimonial-description">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Nihil distinctio sint ex enim quis rerum recusandae? Sint
+                      aliquid, ea rem, quos minima quisquam nihil mollitia animi
+                      culpa quaerat quas explicabo.
+                    </div>
+                    <div class="testimonial-user">
+                      <div class="testimonial-user-avatar">
+                        <i class="fas fa-user-circle fa-3x"></i>
+                      </div>
+                      <div class="testimonial-user-name">
+                        <span class="user-name">Jane Doe</span>
+                        <span class="user-designation"
+                          >Engineer, Company name</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination testimonials-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects-section" id="projects">
+      <div class="section-container projects-section">
+        <div class="projects-title-container">
+          <h2 class="projects-title">Current Projects</h2>
+        </div>
+        <div class="projects-carousel">
+          <div class="swiper-container swiper-projects">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <img
+                    src="./assets/cost-management.jpeg"
+                    alt=""
+                    class="card-image"
+                  />
+                  <div class="card-content">
+                    <span class="card-title">Cost Management</span>
+                    <p class="card-description">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      At magni soluta repellat et aliquid!
+                    </p>
+                    <a href="" class="text-link">Read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img
+                    src="./assets/management-program.jpeg"
+                    alt=""
+                    class="card-image"
+                  />
+                  <div class="card-content">
+                    <span class="card-title">Cost Management</span>
+                    <p class="card-description">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      At magni soluta repellat et aliquid!
+                    </p>
+                    <a href="" class="text-link">Read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img
+                    src="./assets/energy-services.jpeg"
+                    alt=""
+                    class="card-image"
+                  />
+                  <div class="card-content">
+                    <span class="card-title">Cost Management</span>
+                    <p class="card-description">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      At magni soluta repellat et aliquid!
+                    </p>
+                    <a href="" class="text-link">Read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img
+                    src="./assets/energy-conservation.jpeg"
+                    alt=""
+                    class="card-image"
+                  />
+                  <div class="card-content">
+                    <span class="card-title">Cost Management</span>
+                    <p class="card-description">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      At magni soluta repellat et aliquid!
+                    </p>
+                    <a href="" class="text-link">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination projects-pagination"></div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <section class="clients-section" id="clients">
+      <div class="section-container">
+        <div class="logos-container">
+          <div class="client-logo">
+            <h3 class="client-logo-title">Client Logo</h3>
+          </div>
+          <div class="client-logo">
+            <h3 class="client-logo-title">Client Logo</h3>
+          </div>
+          <div class="client-logo">
+            <h3 class="client-logo-title">Client Logo</h3>
+          </div>
+          <div class="client-logo">
+            <h3 class="client-logo-title">Client Logo</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="section-container">
+        <div class="site-map-container">
+          <div class="company-container">
+            <div class="footer-logo">
+              <i class="far fa-lightbulb fa-lg logo-icon"></i>
+              <span class="logo-text">energy</span>
+            </div>
+            <p class="comany-description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Molestias asperiores velit consequuntur sequi eius sit nam
+              voluptas voluptates est.
+            </p>
+          </div>
+          <ul class="footer-links">
+            <li><a href="" class="footer-link">Company</a></li>
+            <li><a href="" class="footer-link">Current projects</a></li>
+            <li><a href="" class="footer-link">Programs</a></li>
+            <li><a href="" class="footer-link">News</a></li>
+            <li><a href="" class="footer-link">Contact</a></li>
+          </ul>
+          <ul class="footer-links">
+            <li><a href="" class="footer-link">Home</a></li>
+            <li><a href="" class="footer-link">Heating and plumbing</a></li>
+            <li><a href="" class="footer-link">Insulation services</a></li>
+            <li><a href="" class="footer-link">Asbestos services</a></li>
+            <li><a href="" class="footer-link">Renewable energy</a></li>
+          </ul>
+          <ul class="footer-links">
+            <li><a href="" class="footer-link">Client list</a></li>
+            <li><a href="" class="footer-link">Online enquiry</a></li>
+            <li><a href="" class="footer-link">Pressroom</a></li>
+            <li><a href="" class="footer-link">Useful links</a></li>
+            <li><a href="" class="footer-link">Accredations</a></li>
+          </ul>
+          <div class="subscription-form-container">
+            <h3 class="subscribe-title">Subscribe</h3>
+            <form
+              method="POST"
+              class="subscribe-form"
+              onsubmit="handleSubmit(event.preventDefault(), event)"
+            >
+              <input
+                name="email"
+                type="email"
+                placeholder="Email"
+                class="email-input"
+                required
+              />
+              <button type="submit" class="form-submit-button">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="copyright-container">
+          <span class="copyright">&copy; 2020, energy copyrights</span>
+          <span class="copyright-links"
+            ><a href="" class="copyright-link">Privacy policy</a> |
+            <a href="" class="copyright-link">Terms and conditions</a></span
+          >
+          <div class="social-media-container footer-social-icon">
+            <a href=""><i class="fab fa-facebook-f footer-social-icon"></i></a>
+            <a href=""> <i class="fab fa-twitter footer-social-icon"></i></a>
+            <a href=""> <i class="fab fa-youtube footer-social-icon"></i></a>
+            <a href=""> <i class="fab fa-instagram footer-social-icon"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
